@@ -1,6 +1,8 @@
 backend:
-  name: github
-  repo: bradphelan/dastanzforum # Path to your GitHub repository
+  name: git-gateway
+  accept_roles: #optional - accepts all users if left out
+    - admin
+    - editor
 
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
