@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: owner-name/repo-name # Path to your GitHub repository
+  repo: bradphelan/dastanzforum # Path to your GitHub repository
 
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
@@ -21,6 +21,7 @@ collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
     folder: "_posts/blog" # The path to the folder where the documents are stored
+    files: "_files/blog" # path to fikesdw
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
